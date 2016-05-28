@@ -1,19 +1,17 @@
 //
-//  WHUBuryExecuter.m
-//  WHUKitDemo
+//  WHUBuryMan.m
 //
-//  Created by 胡 帅 on 16/4/1.
-//  Copyright © 2016年 Disney. All rights reserved.
+//  Created by Mitty on 16/4/1.
+//  Copyright © 2016年 Mitty. All rights reserved.
 //
 
 #import "WHUBuryCenter.h"
-#import "WHUMacro.h"
 #import <objc/runtime.h>
 
 /**
  *  葬送师
  *  协助BuryCenter完成对象dealloc时的操作
- *  葬送师与濒死者为0..1 - 1关系
+ *  葬送师与濒死者为1 - 1关系
  */
 @interface WHUBuryMan : NSObject
 
@@ -56,7 +54,7 @@ static void * kBuryManKey;
     
     NSString *taskKey = [NSString stringWithFormat:@"%@", buryTask];
     if ([buryMan.tasks valueForKey:taskKey]) {
-        HSLog(@"请勿重复添加相同的任务");
+        NSLog(@"请勿重复添加相同的任务");
     } else {
         [buryMan.tasks setValue:[buryTask copy] forKey:taskKey];
     }

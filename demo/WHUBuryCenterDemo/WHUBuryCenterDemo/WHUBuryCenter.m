@@ -1,9 +1,8 @@
 //
-//  WHUBuryExecuter.m
-//  WHUKitDemo
+//  WHUBuryMan.m
 //
-//  Created by 胡 帅 on 16/4/1.
-//  Copyright © 2016年 Disney. All rights reserved.
+//  Created by Mitty on 16/4/1.
+//  Copyright © 2016年 Mitty. All rights reserved.
 //
 
 #import "WHUBuryCenter.h"
